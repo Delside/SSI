@@ -1,1 +1,16 @@
-<p>main-site works!</p>
+<div class="container">
+  <div
+    class="card shadow bg-white rounded"
+    *ngFor="let form of forms; let i = index"
+    style="margin: 2%"
+  >
+    <div class="card-header">
+      <h2>{{ form.term }}</h2>
+    </div>
+    <div class="card-body">
+      <p><b>Rozwinięcie: </b> {{ form.explication }}</p>
+      <p><b>Definicja: </b> {{ form.definition }}</p>
+      <p><b>Autor: </b> {{ form.author }}</p>
+    </div>
+  </div>
+</div>

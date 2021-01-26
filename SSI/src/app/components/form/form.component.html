@@ -5,20 +5,24 @@
   </div>
   <div class="card-body" style="margin: 3%">
     <h5 class="card-title">Dodaj nową definicję do bazy!</h5>
-    <form>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="form-term">Wpisz nazwę:</label>
-        <input type="text" class="form-control" id="form-term" aria-describedby="emailHelp" placeholder="Nazwa">
+        <input type="text" class="form-control" id="form-term" placeholder="Nazwa" formControlName="term">
       </div>
       <div class="form-group">
         <label for="form-full-term">Wpisz pełną nazwę (jeśli istnieje):</label>
-        <input type="text" class="form-control" id="form-full-term" placeholder="Pełna nazwa">
+        <input type="text" class="form-control" id="form-full-term" placeholder="Pełna nazwa" formControlName="explication">
       </div>
       <div class="form-group">
         <label for="form-definition">Wpisz definicję:</label>
-        <textarea class="form-control" id="form-definition" rows="3" placeholder="Definicja"></textarea>
+        <textarea class="form-control" id="form-definition" rows="3" placeholder="Definicja" formControlName="definition"></textarea>
       </div>
-      <button type="button" class="btn btn-primary btn-lg">Wyślij</button>
+      <div class="form-group">
+        <label for="form-definition">Wpisz autora:</label>
+        <textarea class="form-control" id="form-author" rows="3" placeholder="Autor" formControlName="author"></textarea>
+      </div>
+      <button class="btn btn-primary btn-lg">Wyślij</button>
     </form>
   </div>
 </div>

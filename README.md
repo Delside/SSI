@@ -6,7 +6,6 @@
   * [Built With](#built-with)
   * [Functionality](#functionality)
 * [Getting Started](#getting-started)
-  * [Installation](#installation)
 * [Backend](#Backend)
 
 ## About The Project
@@ -31,4 +30,4 @@ You will need Browser and IDE with Angular 10 to run the project.
 
 ## Backend
 
-For proper functioning, you will also need background part of project. It is available here: [SSI - API](https://github.com/Delside/SSI-API)
+For proper functioning, you will also need backend part of project. It is available here: [SSI - API](https://github.com/Delside/SSI-API)
